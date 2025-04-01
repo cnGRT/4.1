@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant's Computer Bookstore</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 id="collection-title">Must-Read Computer Books</h1>
+            <p id="collection-meta"></p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="books-container" class="books-grid"></section>
+    </main>
+
+    <script>
+    async function populateBooks() {
+        const requestURL = "https://raw.githubusercontent.com/[your-username]/computer-books/main/books.json";
+        const response = await fetch(requestURL);
+        const bookCollection = await response.json();
+        populateHeader(bookCollection);
+        populateBooksList(bookCollection);
+    }
+
+    function populateHeader(obj) {
+        const header = document.querySelector("header");
+        const myH1 = document.createElement("h1");
+        myH1.textContent = "Grant's Book Collection";
+        header.appendChild(myH1);
+
+        const myPara = document.createElement("p");
+        myPara.textContent = `Curated collection of essential computer science books`;
+        header.appendChild(myPara);
+    }
+
+    function populateBooksList(obj) {
+        const section = document.querySelector("section");
+        
+        obj.forEach(book => {
+            const article = document.createElement("article");
+            
+            const title = document.createElement("h2");
+            title.textContent = book.title;
+            
+            const author = document.createElement("p");
+            author.textContent = `Author: ${book.author}`;
+            
+            const description = document.createElement("p");
+            description.textContent = book.description;
+            
+            const price = document.createElement("p");
+            price.classList.add("price");
+            price.textContent = `Price: $${book.price}`;
+            
+            const publisher = document.createElement("p");
+            publisher.textContent = `Publisher: ${book.publisher}`;
+
+            article.appendChild(title);
+            article.appendChild(author);
+            article.appendChild(description);
+            article.appendChild(price);
+            article.appendChild(publisher);
+
+            section.appendChild(article);
+        });
+    }
+
+    populateBooks();
+    </script>
+</body>
+</html>
