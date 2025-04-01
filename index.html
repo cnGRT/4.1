@@ -20,7 +20,7 @@
 
     <script>
     async function populateBooks() {
-        const requestURL = "https://raw.githubusercontent.com/cnGRT/4.1/refs/heads/main/book.json";
+        const requestURL = "https://raw.githubusercontent.com/cnGRT/4.1/refs/heads/main/books.json";
         const response = await fetch(requestURL);
         const bookCollection = await response.json();
         populateHeader(bookCollection);
