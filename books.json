@@ -1,72 +1,69 @@
-[
-  {
-    "author": "Robert C. Martin",
-    "title": "Clean Code",
-    "description": "In this essential guide, Robert C. Martin presents practical advice for writing clean, maintainable code. Through case studies and practical examples, you'll learn how to create code that's readable, efficient, and adaptable to change. This handbook covers principles of software craftsmanship, error handling, testing, and concurrency. A must-read for developers serious about their craft.",
-    "price": 39.99,
-    "publisher": "Prentice Hall"
-  },
-  {
-    "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
-    "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
-    "description": "This seminal work introduces 23 classic software design patterns that help developers create flexible, reusable designs. The 'Gang of Four' authors demonstrate how patterns solve common problems in object-oriented design through practical examples. Essential reading for understanding fundamental OOP concepts and improving software architecture skills.",
-    "price": 54.99,
-    "publisher": "Addison-Wesley"
-  },
-  {
-    "author": "Thomas H. Cormen",
-    "title": "Introduction to Algorithms",
-    "description": "Comprehensive guide to modern algorithms, covering sorting, graph algorithms, data structures, and computational complexity. Often called 'CLRS' after its authors, this textbook provides rigorous mathematical analysis alongside practical implementations. Ideal for computer science students and professionals seeking deep understanding of algorithmic concepts.",
-    "price": 89.99,
-    "publisher": "MIT Press"
-  },
-  {
-    "author": "Eric Freeman, Elisabeth Robson",
-    "title": "Head First Design Patterns",
-    "description": "Using a visually rich format, this book makes design patterns approachable through brain-friendly explanations and real-world examples. Covers key patterns like Observer, Decorator, and Factory with practical implementations in Java. Perfect for visual learners wanting to master object-oriented design principles in an engaging way.",
-    "price": 47.50,
-    "publisher": "O'Reilly Media"
-  },
-  {
-    "author": "Randal E. Bryant, David R. O'Hallaron",
-    "title": "Computer Systems: A Programmer's Perspective",
-    "description": "Explores computer systems from a programmer's viewpoint, covering machine-level code, processor architecture, memory hierarchy, and system I/O. This award-winning textbook bridges hardware and software concepts, providing crucial insights for writing efficient, reliable code. Includes hands-on labs using real-world systems programming examples.",
-    "price": 129.99,
-    "publisher": "Pearson"
-  },
-  {
-    "author": "Steve McConnell",
-    "title": "Code Complete",
-    "description": "Definitive guide to software construction with practical checklists and best practices. Covers defensive programming, debugging, code tuning, and software quality assurance. McConnell's timeless wisdom helps developers at all levels write better code and understand the entire software development process.",
-    "price": 45.95,
-    "publisher": "Microsoft Press"
-  },
-  {
-    "author": "Donald Knuth",
-    "title": "The Art of Computer Programming",
-    "description": "Knuth's legendary multi-volume work provides encyclopedic coverage of fundamental algorithms and data structures. Combines mathematical rigor with practical programming insights. Though challenging, this masterpiece rewards dedicated readers with deep understanding of algorithmic analysis and computer science theory.",
-    "price": 199.99,
-    "publisher": "Addison-Wesley"
-  },
-  {
-    "author": "Kyle Simpson",
-    "title": "You Don't Know JS Yet",
-    "description": "Deep dive into JavaScript's core mechanisms, covering scope, closures, prototypes, and async programming. This series helps developers move beyond superficial understanding to master the language's nuances. Essential for full-stack developers working with modern JavaScript frameworks and Node.js environments.",
-    "price": 29.99,
-    "publisher": "O'Reilly Media"
-  },
-  {
-    "author": "Eric Matthes",
-    "title": "Python Crash Course",
-    "description": "Hands-on introduction to Python programming covering basic syntax, data visualization, and web application development. Includes projects like a Space Invaders-style arcade game and data visualizations with Matplotlib. Perfect for beginners wanting to learn programming through practical, project-based learning.",
-    "price": 34.95,
-    "publisher": "No Starch Press"
-  },
-  {
-    "author": "Martin Kleppmann",
-    "title": "Designing Data-Intensive Applications",
-    "description": "Comprehensive guide to building scalable, reliable data systems. Covers database fundamentals, distributed systems, and stream processing. Essential for engineers working with big data, microservices, or cloud-native applications. Provides valuable insights for making informed architectural decisions in modern applications.",
-    "price": 59.99,
-    "publisher": "O'Reilly Media"
-  }
-]
+{
+  "collectionName": "Must-Read Computer Books",
+  "publisher": "Tech Publications",
+  "yearPublished": 2023,
+  "location": "Digital Library",
+  "available": true,
+  "books": [
+    {
+      "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+      "author": "Robert C. Martin",
+      "pages": 464,
+      "topics": [
+        "Software Development",
+        "Code Quality",
+        "Best Practices"
+      ]
+    },
+    {
+      "title": "The Pragmatic Programmer",
+      "author": "Andrew Hunt, David Thomas",
+      "pages": 352,
+      "topics": [
+        "Programming Techniques",
+        "Career Growth",
+        "Software Engineering"
+      ]
+    },
+    {
+      "title": "Designing Data-Intensive Applications",
+      "author": "Martin Kleppmann",
+      "pages": 600,
+      "topics": [
+        "Distributed Systems",
+        "Database Design",
+        "Scalability"
+      ]
+    },
+    {
+      "title": "Introduction to Algorithms",
+      "author": "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein",
+      "pages": 1312,
+      "topics": [
+        "Algorithms",
+        "Computer Science",
+        "Problem Solving"
+      ]
+    },
+    {
+      "title": "Structure and Interpretation of Computer Programs (SICP)",
+      "author": "Harold Abelson, Gerald Jay Sussman",
+      "pages": 657,
+      "topics": [
+        "Functional Programming",
+        "Lisp",
+        "Computer Science Fundamentals"
+      ]
+    },
+    {
+      "title": "Artificial Intelligence: A Modern Approach",
+      "author": "Stuart Russell, Peter Norvig",
+      "pages": 1136,
+      "topics": [
+        "AI",
+        "Machine Learning",
+        "Problem Solving"
+      ]
+    }
+  ]
+}
